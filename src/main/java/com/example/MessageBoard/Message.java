@@ -1,4 +1,4 @@
-package main.java.com.example.MessageBoard;
+package com.example.MessageBoard;
 
 public class Message{
     private long msgId;

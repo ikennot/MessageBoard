@@ -1,5 +1,5 @@
 
-package main.java.com.example.MessageBoard;
+package com.example.MessageBoard;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +11,7 @@ public class MessageService {
 
     private List<Message> messages  = new ArrayList<>();
 
-    public List<Message> getMessage(){
+    public List<Message> getMessages(){
         return messages;
     }
 
