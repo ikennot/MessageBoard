@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Message board</title>
+</head>
+<body>
+    <h1>Message board</h1>
+    <div>
+        <form th:action="@{AddMessage}" method="get">
+           <button>Add new Message</button>
+        </form>
+      
+    </div>
+</body>
+</html>
