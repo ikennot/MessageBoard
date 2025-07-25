@@ -2,10 +2,22 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/index.css}">
     <title>Welcome to Message board</title>
 </head>
 <body>
-    <h1>Message board</h1>
+    <div>
+        <h1 class="title">Message board</h1>
+        <img th:src=""
+    </div>
+   
+<div class="message-board-container">
+   <div th:each="m: ${message}">
+      <p th:text="${m.name}"></p>
+      <p th:text="${m.message}"></p>
+   </div>
+</div>
+
     <div>
         <form th:action="@{AddMessage}" method="get">
            <button>Add new Message</button>

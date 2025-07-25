@@ -6,9 +6,11 @@
     <title>Add message</title>
 </head>
 <body>
-    <h1>Add fucking message</h1>
-    <form th:action>
-
+    <h1>Add message</h1>
+    <form th:action="@{/messageboardweb/addnewmessage}" method="post" th:object="${message}">
+        <input type="text" th:field="*{name}" placeholder="Name" /><br />
+        <input type="text" th:field="*{message}" placeholder="Message" /><br />
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
