@@ -10,12 +10,15 @@ public class MessageService {
 	
 
     private List<Message> messages  = new ArrayList<>();
+    private long msgId = 0;  
+  
 
     public List<Message> getMessages(){
         return messages;
     }
 
     public void addMessage(Message message){
+        message.setMsgId(++msgId);
         messages.add(message);
     }
     
