@@ -15,12 +15,13 @@
    <div th:each="m: ${message}">
       <p th:text="${m.name}"></p>
       <p th:text="${m.message}"></p>
+      <button class="btn">Delete message</button>
    </div>
 </div>
 
     <div>
         <form th:action="@{AddMessage}" method="get">
-           <button>Add new Message</button>
+           <button class="btn">Add new Message</button>
         </form>
       
     </div>
