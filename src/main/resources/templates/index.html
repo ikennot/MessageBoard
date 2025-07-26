@@ -13,8 +13,8 @@
    
 <div class="message-board-container">
    <div th:each="m: ${message}">
-      <p th:text="${m.name}"></p>
-      <p th:text="${m.message}"></p>
+      <p th:text="'Message from : ' + ${m.name}"></p>
+      <p th:text="'Message : ' + ${m.message}"></p>
       <button class="btn">Delete message</button>
    </div>
 </div>
