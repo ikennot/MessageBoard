@@ -1,6 +1,13 @@
 package com.example.MessageBoard;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
+@Entity
 public class Message{
+     @Id
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long msgId;
     private String name;
     private String message;
