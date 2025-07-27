@@ -10,6 +10,36 @@ body{display: flex;
 
 .form-container{
     display: flex;
-     
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(84, 84, 84);
+    padding: 30px;
+    border-radius: 10px;
+}
+.forms{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+}
 
+.text-inputs{
+    padding: 15px;
+    font-size: 16px;
+}
+
+.btn{
+      padding: 10px;
+    background-color: rgb(12, 81, 155);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+ opacity: 0.7;
 }
