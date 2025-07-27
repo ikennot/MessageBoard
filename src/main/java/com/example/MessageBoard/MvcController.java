@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -34,4 +35,11 @@ public class MvcController {
   return "redirect:/messageboardweb/index"; // redirect para maiwasan ang double-submit
    }
 
+
+
+  @GetMapping("delete/{msgId}")
+  public String deletemessage(@PathVariable long msgId){
+      service.deleteMessage(msgId);
+    return "redirect:/messageboardweb/index";
+  }
 }

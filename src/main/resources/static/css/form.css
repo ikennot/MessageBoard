@@ -1,0 +1,15 @@
+body{display: flex;
+      min-height: 100vh; /* buong screen height */
+      background-color: rgb(32, 32, 32);
+      color: white;
+      margin: 30px;
+       font-family: Arial, Helvetica, sans-serif;
+       align-items: center;
+       justify-content: center;
+}
+
+.form-container{
+    display: flex;
+     
+
+}

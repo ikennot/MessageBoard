@@ -2,15 +2,21 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/form.css}">
+    <link rel="icon" th:href="@{/pictures/mail-box.png}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add message</title>
 </head>
 <body>
-    <h1>Add message</h1>
+    <div class="form-container">
+       <h1>Add message</h1>
     <form th:action="@{/messageboardweb/addnewmessage}" method="post" th:object="${message}">
         <input type="text" th:field="*{name}" placeholder="Name" /><br />
         <input type="text" th:field="*{message}" placeholder="Message" /><br />
         <button type="submit">Submit</button>
     </form>
+
+    </div>
+   
 </body>
 </html>

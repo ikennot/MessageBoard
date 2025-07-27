@@ -41,7 +41,7 @@ public class MessageService {
     }
    
     public void deleteMessage(long msgId){
-        messages.remove(msgId);
+      messages.removeIf((m)->m.getMsgId() == msgId);
     }
 
 

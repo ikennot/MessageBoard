@@ -3,16 +3,10 @@ body{
       background-color: rgb(32, 32, 32);
       color: white;
       margin: 30px;
+      font-family: Arial, Helvetica, sans-serif;
       
 }
 
-p{
-     font-family: Arial, Helvetica, sans-serif;
-}
-
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 
 
@@ -51,7 +45,10 @@ h1{
       max-width: 500px;
       height: 150px;
       padding: 30px;
+   
 }
+
+
 
 .btn{
     padding: 10px;
@@ -60,6 +57,16 @@ h1{
     border: none;
     cursor: pointer;
 }
+
+.btn-remove {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
 
 .btn:hover{
  opacity: 0.7;
