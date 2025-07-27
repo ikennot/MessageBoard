@@ -10,7 +10,7 @@
 <body>
     <div class="form-container">
        <h1>Add message</h1>
-    <form th:action="@{/messageboardweb/addnewmessage}" method="post" th:object="${message}" class="forms">
+    <form th:action="@{/messageboardweb/addnewmessage}" method="post" th:object="${formdata}" class="forms">
         <input type="text" th:field="*{name}" placeholder="Name" class="text-inputs"/>
         <input type="text" th:field="*{message}" placeholder="Message" class="text-inputs"/>
         <button type="submit" class="btn">Submit</button>

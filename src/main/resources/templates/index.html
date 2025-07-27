@@ -13,7 +13,7 @@
     </div>
    
 <div class="message-board-container">
-   <div th:each="m: ${message}">
+   <div th:each="m: ${formdata}">
     
        <p th:text="'Message from : ' + ${m.name}"></p>
       <p th:text="'Message : ' + ${m.message}"></p>

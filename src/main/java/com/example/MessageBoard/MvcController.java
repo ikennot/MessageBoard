@@ -18,19 +18,19 @@ public class MvcController {
 
   @GetMapping("/index")
    public String showIndex(Model model){
-    model.addAttribute("message",service.getMessages());
+    model.addAttribute("formdata",service.getMessages());
     return "index";
   }
 
   @GetMapping("/AddMessage")
   public String messageForm(Model model){
-    model.addAttribute("message",new Message());
+    model.addAttribute("formdata",new Message());
     return "form";
   }
 
   
   @PostMapping("/addnewmessage")
-   public String addnewMessage(@ModelAttribute Message message,Model model){
+   public String addnewMessage(@ModelAttribute("formdata") Message message,Model model){
     service.addMessage(message);
   return "redirect:/messageboardweb/index"; // redirect para maiwasan ang double-submit
    }
