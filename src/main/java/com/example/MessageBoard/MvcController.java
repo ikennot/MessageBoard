@@ -32,7 +32,7 @@ public class MvcController {
   @PostMapping("/addnewmessage")
    public String addnewMessage(@ModelAttribute("formdata") Message message,Model model){
     service.addMessage(message);
-  return "redirect:/messageboardweb/index"; // redirect para maiwasan ang double-submit
+  return "redirect:/messageboardweb/index"; 
    }
 
 
