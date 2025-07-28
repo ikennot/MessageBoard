@@ -15,5 +15,5 @@ RUN mvn clean install -DskipTests
 
 FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY --from=build /app/target/message-board-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/MessageBoard-0.0.1-SNAPSHOT.jar app.jar
 CMD ["java", "-jar", "app.jar"]
