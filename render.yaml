@@ -6,3 +6,5 @@ services:
     branch: main
     dockerfilePath: Dockerfile
     plan: free
+    envVars:
+      - fromGroup: messageboard-env
